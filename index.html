@@ -2,28 +2,109 @@
 <html lang="uk">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Тінь Гірана</title>
 
 <style>
-body{
+
+*{
     margin:0;
-    background:#0f1115;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#121212;
     color:#d4af37;
+    font-family:Georgia, serif;
+    min-height:100vh;
+
     display:flex;
     justify-content:center;
     align-items:center;
-    height:100vh;
-    font-family:Georgia, serif;
+
+    cursor:pointer;
+}
+
+.book-cover{
+    border:1px solid rgba(212,175,55,0.3);
+
+    padding:60px;
+    width:min(90vw,700px);
+
+    text-align:center;
+
+    transition:all .4s ease;
+}
+
+.book-cover:hover{
+    border-color:#d4af37;
+
+    box-shadow:
+        0 0 15px rgba(212,175,55,.25),
+        0 0 40px rgba(212,175,55,.10);
 }
 
 h1{
-    font-size:72px;
+    font-size:clamp(42px,8vw,90px);
+
     letter-spacing:8px;
+
+    transition:all .4s ease;
 }
+
+.book-cover:hover h1{
+    text-shadow:
+        0 0 8px rgba(212,175,55,.4);
+}
+
+.top-line,
+.bottom-line{
+    height:1px;
+    background:rgba(212,175,55,.4);
+
+    width:70%;
+
+    margin:auto;
+}
+
+.top-line{
+    margin-bottom:40px;
+}
+
+.bottom-line{
+    margin-top:40px;
+}
+
+.click-hint{
+    margin-top:35px;
+
+    color:rgba(212,175,55,.5);
+
+    font-size:14px;
+
+    letter-spacing:3px;
+}
+
 </style>
 </head>
 
-<body>
-    <h1>ТІНЬ ГІРАНА</h1>
+<body onclick="location.href='contents.html'">
+
+<div class="book-cover">
+
+<div class="top-line"></div>
+
+<h1>ТІНЬ ГІРАНА</h1>
+
+<div class="bottom-line"></div>
+
+<div class="click-hint">
+натисніть будь-де
+</div>
+
+</div>
+
 </body>
 </html>
