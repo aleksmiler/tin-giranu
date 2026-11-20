@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Зміст</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#121212;
+    color:#d4af37;
+    font-family:Georgia, serif;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:min(90vw,800px);
+    text-align:center;
+}
+
+h1{
+    margin-bottom:50px;
+    letter-spacing:6px;
+}
+
+.chapter{
+    display:block;
+
+    color:#e6d397;
+
+    text-decoration:none;
+
+    font-size:24px;
+
+    padding:18px;
+
+    margin:15px 0;
+
+    border:1px solid rgba(212,175,55,.2);
+
+    transition:.3s;
+}
+
+.chapter:hover{
+    border-color:#d4af37;
+
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 0 10px rgba(212,175,55,.15);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>ЗМІСТ</h1>
+
+<a class="chapter" href="chapter1.html">
+Глава 1. Порожні місця за столом
+</a>
+
+<a class="chapter" href="chapter2.html">
+Глава 2. Тіні Гірана
+</a>
+
+</div>
+
+</body>
+</html>
